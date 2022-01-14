@@ -137,11 +137,21 @@ main .top .key_info .key_bt span {
     font-size: 16px;
     color: #7B8BAD;
 }
-main .top .key_img {
+main .top .desktop_img {
     width: 540px;
     height: 480px;
 }
-main .top .key_img img {
+main .top .desktop_img img {
+    width: 100%;
+    border-radius: 20px;
+}
+main .top .tablet_img {
+    display: none;
+}
+main .top .mobile_img {
+    display: none;
+}
+main .top .tablet_img img {
     width: 100%;
     border-radius: 20px;
 }
@@ -235,4 +245,177 @@ main .middle {
     line-height: 26px;
     color: #7B8BAD;
     font-family: 'Barlow', sans-serif;
+}
+@media (max-width: 768px) {
+    body {
+        width: 768px;
+        background-image: none;
+    }
+    section {
+        width: 689px;
+        margin: 0 auto;
+    }
+    section header {
+        width: 100%;
+        
+    }
+    main .top .key_info {
+        width: 339px;
+        height: 305px;
+    }
+    main .top .key_info h1 {
+        font-size: 48px;
+    }
+    main .top .key_info p {
+        font-size: 16px;
+        width: 339px;
+        height: 78px;
+    }
+    main .top .desktop_img {
+        display: none;
+    }
+    main .top .tablet_img {
+        display: block;
+        position: relative;
+        left: 70px;
+    }
+    main .top .tablet_img img {
+        width: 478px;
+        height: 425px;
+
+    }
+    main .middle {
+        flex-wrap: wrap;
+        margin-bottom: 142px;
+    }
+    main .middle .backimg {
+        display: none;
+    }
+    main .middle .key_imgs {
+        width: 689px;
+        height: 320px;
+        margin-bottom: 72px;
+    }
+    main .middle .key_imgs .layer {
+        height: 320px;
+        margin-bottom: -320px;
+    }
+    main .middle .key_imgs .first_img {
+        width: 214px;
+        height: 320px;
+    }
+    main .middle .key_imgs .second_img {
+        width: 445px;
+        height: 320px;
+    }
+    main .middle .key_infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 689px;
+        height: 108px;
+    }
+    main .middle .key_infos h1 {
+        margin-right: 36px;
+        width: 199px;
+        height: 108px;
+        margin-bottom: 0;
+    }
+    main .middle .key_infos p {
+        width: 398px;
+        height: 78px;
+    }
+    .bottom {
+        flex-wrap: wrap;
+        width: 631px;
+        height: 650px;
+    }
+    .bottom .category {
+        width: 281px;
+        height: 289px;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+    section {
+        width: 327px;
+    }
+    main .top {
+        display: block;
+    }
+    main .top .key_info {
+        width: 327px;
+        height: 286px;
+        margin-bottom: 64px;
+    }
+    main .top .key_info .key_bt button {
+        width: 150px;
+        height: 48px;
+    }
+    main .top .tablet_img {
+        display: none;
+    }
+    main .top .mobile_img {
+        display: block;
+        width: 372px;
+        height: 331px;
+    }
+    main .top .mobile_img img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    main .middle {
+        width: 373px;
+        
+    }
+    main .middle .key_imgs {
+        width: 373px;
+        height: 193px;
+    }
+    main .middle .key_imgs .layer {
+        height: 193px;
+        margin-bottom: -193px;
+        
+    }
+    main .middle .key_imgs .first_img {
+        width: 129px;
+        height: 193px;
+        
+        
+    }
+    main .middle .key_imgs .second_img {
+        width: 220px;
+        height: 193px;
+    }
+    main .middle .key_infos {
+        display: block;
+        width: 100%;
+        height: 236px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    main .middle .key_infos h1 {
+        width: 255px;
+        height: 108px;
+        margin: 0;
+    }
+    main .middle .key_infos p {
+        width: 327px;
+        height: 104px;
+    }
+    .bottom {
+        display: block;
+        width: 330px;
+        margin: 0 auto;
+        height: 1380px;
+    }
+    .bottom .category {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .bottom .category .img_logo {
+        margin: 48px auto;
+    }
 }
